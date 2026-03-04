@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Projetos.module.css";
+import {userData} from "../../data/userData.js";
 
 export default function Projetos() {
   const [repos, setRepos] = useState([]);
@@ -8,7 +9,7 @@ export default function Projetos() {
     async function buscarRepos() {
       try {
         const response = await fetch(
-          "https://api.github.com/users/LuizFagundesT/repos"
+          `https://api.github.com/users/${userData.githubName}/repos`
         );
         const data = await response.json();
 
@@ -30,7 +31,7 @@ export default function Projetos() {
 
   return (
     <section className={styles.projetos}>
-      <h1>Meus projetos</h1>
+      <h1 className={styles.h1}>Meus projetos</h1>
       <p>Veja aqui um pouco dos meus projetos!</p>
 
       <div className={styles.grid}>
