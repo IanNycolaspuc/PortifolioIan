@@ -10,5 +10,45 @@
   "skills": {
   "title": "Skills",
   "text": "See a little more about my skills and technologies"
+  },
+  "about": {
+    "mainTitle": "About Me",
+    "whoTitle": "Who I Am",
+    "description": "I am a Software Engineering student focused on backend and frontend development. I have experience with Java, Spring Boot, React, and relational databases. I am constantly seeking to grow as a developer and build scalable and innovative solutions.",
+    "expTitle": "Experience",
+    "expSubtitle": "Take a look at my professional journey",
+
+    "job1": {
+      "title": "Frontend Developer",
+      "company": "Company Name",
+      "period": "Jan 2023 - Present",
+      "description": "Development of web applications using React and Spring Boot, database modeling, and REST API integration."
+    },
+
+    "job2": {
+      "title": "Junior Developer",
+      "company": "Another Company",
+      "period": "Jun 2022 - Dec 2022",
+      "description": "Worked on system development and maintenance, bug fixing, and performance improvements."
+    },
+
+    "indicatorsTitle": "Indicators",
+    "statsTitle": "Statistics",
+
+    "stats": {
+      "projects": "Projects",
+      "years": "Years",
+      "clients": "Clients",
+      "commits": "Commits",
+      "coffee": "Coffees"
+    },
+
+    "academicTitle": "Academic Progress",
+
+    "academic": {
+      "software": "Software Engineering - PUC Minas",
+      "js": "JavaScript & TypeScript - Udemy",
+      "python": "Python Immersion - Hashtag"
+    }
   }
 }

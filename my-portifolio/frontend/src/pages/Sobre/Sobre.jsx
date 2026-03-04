@@ -1,7 +1,7 @@
 import style from "./Sobre.module.css";
 import { useTranslation } from "react-i18next";
 import BackgroundCanvas from "../../components/BackgroundCanvas";
-import minhaFoto from "../../assets/minhaFoto.jpg"; // ← Importe sua foto aqui
+import minhaFoto from "../../assets/minhaFoto.jpg";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import SchoolIcon from "@mui/icons-material/School";
@@ -22,25 +22,22 @@ export default function Sobre() {
               <img src={minhaFoto} alt="Foto do dev" />
             </div>
           </div>
-          <h1 className={style.mainTitle}>Sobre Mim</h1>
+          <h1 className={style.mainTitle}>{t("about.mainTitle")}</h1>
         </div>
 
         {/* SOBRE MIM */}
         <div className={style.section}>
-          <h2 className={style.sectionTitle}>Quem Sou Eu</h2>
+          <h2 className={style.sectionTitle}>{t("about.whoTitle")}</h2>
           <p className={style.description}>
-            Sou estudante de Engenharia de Software com foco em desenvolvimento
-            backend e frontend. Tenho experiência com Java, Spring Boot,
-            React e bancos de dados relacionais. Busco evoluir constantemente
-            como desenvolvedor e construir soluções escaláveis e inovadoras.
+            {t("about.description")}
           </p>
         </div>
 
         {/* EXPERIÊNCIA */}
         <div className={style.section}>
-          <h2 className={style.sectionTitle}>Experiência</h2>
+          <h2 className={style.sectionTitle}>{t("about.expTitle")}</h2>
           <p className={style.subtitle}>
-            Veja um pouco sobre minha carreira profissional
+            {t("about.expSubtitle")}
           </p>
 
           <div className={style.timeline}>
@@ -51,16 +48,14 @@ export default function Sobre() {
               </div>
 
               <div className={style.card}>
-                <h3>Desenvolvedor Frontend</h3>
+                <h3>{t("about.job1.title")}</h3>
                 <span className={style.company}>
-                  <ApartmentIcon fontSize="small" /> Nome da Empresa
+                  <ApartmentIcon fontSize="small" /> {t("about.job1.company")}
                 </span>
-                <p className={style.cardDate}>Jan 2023 - Presente</p>
-                <p>
-                  Desenvolvimento de aplicações web utilizando React
-                  e Spring Boot, participação em modelagem de banco
-                  de dados e integração com APIs REST.
+                <p className={style.cardDate}>
+                  {t("about.job1.period")}
                 </p>
+                <p>{t("about.job1.description")}</p>
               </div>
             </div>
 
@@ -71,15 +66,14 @@ export default function Sobre() {
               </div>
 
               <div className={style.card}>
-                <h3>Desenvolvedor Júnior</h3>
+                <h3>{t("about.job2.title")}</h3>
                 <span className={style.company}>
-                  <ApartmentIcon fontSize="small" /> Outra Empresa
+                  <ApartmentIcon fontSize="small" /> {t("about.job2.company")}
                 </span>
-                <p className={style.cardDate}>Jun 2022 - Dez 2022</p>
-                <p>
-                  Atuação no desenvolvimento e manutenção de sistemas,
-                  correção de bugs e melhoria de performance.
+                <p className={style.cardDate}>
+                  {t("about.job2.period")}
                 </p>
+                <p>{t("about.job2.description")}</p>
               </div>
             </div>
           </div>
@@ -87,45 +81,46 @@ export default function Sobre() {
 
         {/* INDICADORES */}
         <div className={style.section}>
-          <h2 className={style.sectionTitle}>Indicadores</h2>
+          <h2 className={style.sectionTitle}>{t("about.indicatorsTitle")}</h2>
 
           <div className={style.statsBox}>
             <div className={style.statsHeader}>
               <TrendingUpIcon />
-              <span>Estatísticas</span>
+              <span>{t("about.statsTitle")}</span>
             </div>
+
             <div className={style.stats}>
               <div className={style.statItem}>
                 <h3>5</h3>
-                <span>Projetos</span>
+                <span>{t("about.stats.projects")}</span>
               </div>
               <div className={style.statItem}>
                 <h3>3</h3>
-                <span>Anos</span>
+                <span>{t("about.stats.years")}</span>
               </div>
               <div className={style.statItem}>
                 <h3>1</h3>
-                <span>Clientes</span>
+                <span>{t("about.stats.clients")}</span>
               </div>
               <div className={style.statItem}>
                 <h3>23</h3>
-                <span>Commits</span>
+                <span>{t("about.stats.commits")}</span>
               </div>
               <div className={style.statItem}>
                 <h3>100+</h3>
-                <span>Cafés</span>
+                <span>{t("about.stats.coffee")}</span>
               </div>
             </div>
           </div>
 
           <div className={style.academicBox}>
             <h3 className={style.academicTitle}>
-              <SchoolIcon /> Progresso Acadêmico
+              <SchoolIcon /> {t("about.academicTitle")}
             </h3>
 
             <div className={style.progressItem}>
               <div className={style.progressLabel}>
-                <span>Engenharia de Software - PUC Minas</span>
+                <span>{t("about.academic.software")}</span>
                 <span className={style.progressPercent}>60%</span>
               </div>
               <div className={style.progressBar}>
@@ -135,7 +130,7 @@ export default function Sobre() {
 
             <div className={style.progressItem}>
               <div className={style.progressLabel}>
-                <span>JavaScript e TypeScript - Udemy</span>
+                <span>{t("about.academic.js")}</span>
                 <span className={style.progressPercent}>30%</span>
               </div>
               <div className={style.progressBar}>
@@ -145,7 +140,7 @@ export default function Sobre() {
 
             <div className={style.progressItem}>
               <div className={style.progressLabel}>
-                <span>Imersão Python - Hashtag</span>
+                <span>{t("about.academic.python")}</span>
                 <span className={style.progressPercent}>100%</span>
               </div>
               <div className={style.progressBar}>

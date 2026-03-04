@@ -19,6 +19,47 @@
  "skills": {
   "title": "Habilidades",
   "text": "Veja um pouco mais sobre minhas habilidades e tecnologias"
-  }
+  }, 
 
+  "about": {
+    "mainTitle": "Sobre Mim",
+    "whoTitle": "Quem Sou Eu",
+    "description": "Sou estudante de Engenharia de Software com foco em desenvolvimento backend e frontend. Tenho experiência com Java, Spring Boot, React e bancos de dados relacionais. Busco evoluir constantemente como desenvolvedor e construir soluções escaláveis e inovadoras.",
+    "expTitle": "Experiência",
+    "expSubtitle": "Veja um pouco sobre minha carreira profissional",
+
+    "job1": {
+      "title": "Desenvolvedor Frontend",
+      "company": "Nome da Empresa",
+      "period": "Jan 2023 - Presente",
+      "description": "Desenvolvimento de aplicações web utilizando React e Spring Boot, participação em modelagem de banco de dados e integração com APIs REST."
+    },
+
+    "job2": {
+      "title": "Desenvolvedor Júnior",
+      "company": "Outra Empresa",
+      "period": "Jun 2022 - Dez 2022",
+      "description": "Atuação no desenvolvimento e manutenção de sistemas, correção de bugs e melhoria de performance."
+    },
+
+    "indicatorsTitle": "Indicadores",
+    "statsTitle": "Estatísticas",
+
+    "stats": {
+      "projects": "Projetos",
+      "years": "Anos",
+      "clients": "Clientes",
+      "commits": "Commits",
+      "coffee": "Cafés"
+    },
+
+    "academicTitle": "Progresso Acadêmico",
+
+    "academic": {
+      "software": "Engenharia de Software - PUC Minas",
+      "js": "JavaScript e TypeScript - Udemy",
+      "python": "Imersão Python - Hashtag"
+    }
+  }
 }
+
