@@ -29,7 +29,7 @@ export default function Home() {
             <span className={stylesHome.typewriterText}>
               <Typewriter
                 options={{
-                  strings: ['Backend Developer', 'Python Developer', 'AI Enthusiast', 'Apaixonado ppor música'],
+                  strings: ['Backend Developer', 'Python Developer', 'AI Enthusiast -_-', 'Apaixonado por música '],
                   autoStart: true,
                   loop: true,
                   delay: 75,

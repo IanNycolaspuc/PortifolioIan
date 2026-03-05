@@ -12,6 +12,7 @@ export default function Sobre() {
 
   return (
     <section className={style.sobrePage}>
+      
       <BackgroundCanvas />
 
       <div className={style.container}>

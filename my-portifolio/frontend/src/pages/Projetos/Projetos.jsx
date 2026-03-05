@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Projetos.module.css";
 import {userData} from "../../data/userData.js";
+import BackgroundCanvas from "../../components/BackgroundCanvas";
 
 export default function Projetos() {
   const [repos, setRepos] = useState([]);
@@ -30,7 +31,10 @@ export default function Projetos() {
   }, []);
 
   return (
+
+    
     <section className={styles.projetos}>
+      <BackgroundCanvas />
       <h1 className={styles.h1}>Meus projetos</h1>
       <p>Veja aqui um pouco dos meus projetos!</p>
 
