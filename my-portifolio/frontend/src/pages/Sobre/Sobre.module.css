@@ -118,11 +118,11 @@
 }
 
 .description {
-  max-width: 700px;
+  max-width: 7000px;
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.2;
   color: #d0d0d0;
-  font-size: 1.05rem;
+  font-size: 1.3rem;
 }
 
 /* ========================

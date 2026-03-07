@@ -1,14 +1,6 @@
-export default function SpotifyPlayer({ linkMusica }) {
+export default function SpotifyPlayer({ linkMusica, className }) {
   return (
-    <div
-      style={{
-        position: "fixed",
-        bottom: "20px",
-        right: "20px",
-        width: "350px",
-        zIndex: 9999
-      }}
-    >
+    <div className={className}>
       <iframe
         src={linkMusica}
         width="100%"
@@ -17,7 +9,6 @@ export default function SpotifyPlayer({ linkMusica }) {
         allowFullScreen
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
-        style={{ borderRadius: "12px" }}
       />
     </div>
   );

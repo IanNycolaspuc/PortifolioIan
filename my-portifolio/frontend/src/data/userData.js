@@ -19,10 +19,14 @@ export const userData = {
   curriculo,
 
   caracteristicas: [
-    "user.Engenharia De Software",
-    "user.SpringBoot",
-    "user.ai",
-    "user.software",
-    "user.Python"
-  ]
+    "user.React",
+    "user.Java Script",
+    "user.Docker",
+    "user.Python",
+    "user.Figman"
+  ],
+
+  footerDev: "Sou Desenvolvedor Full Stack com foco em Python, criando soluções de ponta a ponta e integrando frontends com APIs de qualidade. Trabalho com atenção à segurança e à qualidade em todas as etapas do desenvolvimento de software: desde o projeto, testes e entrega até a manutenção e o aprimoramento contínuo.Meu objetivo é estudar processos, redesenhá-los quando necessário e propor melhorias por meio de integrações digitais que gerem valor e resultados."
+
+  
 };

@@ -59,11 +59,11 @@ const Footer = () => {
           
           {/* Usando o placeholder "user.desc" do seu objeto */}
           <p className={styles.description}>
-            {userData.desc === "user.desc" ? (
+            {userData.footerDev === "user.footerDev" ? (
               // Texto de exemplo baseado no seu print se o dado real não estiver lá
               "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters..."
             ) : (
-              userData.desc
+              userData.footerDev
             )}
           </p>
           
