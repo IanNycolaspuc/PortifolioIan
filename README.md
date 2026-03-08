@@ -23,6 +23,41 @@ O objetivo do sistema é demonstrar, de forma prática e organizada, a aplicaç�
 📂 **Repositório: https://github.com/LuizFagundesT/Portifolio.git** 
 
 ---
+# 📚 Índice
+
+- Funcionalidades
+- Tecnologias Utilizadas
+- Arquitetura
+- Estrutura de Pastas
+- Protótipos
+- Autores
+- Agradecimentos
+
+---
+
+# ✨ Funcionalidades Principais
+
+O portfólio possui as seguintes funcionalidades:
+
+### 🏠 Página Inicial
+Apresentação inicial do portfólio.
+
+### 👨‍💻 Sobre
+Informações sobre formação, interesses e trajetória profissional.
+
+### 🛠 Habilidades
+Lista das principais tecnologias dominadas.
+
+### 📂 Projetos
+Exibição de projetos desenvolvidos.
+
+### 📩 Contato
+Formulário de contato para envio de mensagens.
+
+### 🌎 Internacionalização
+Suporte para múltiplos idiomas utilizando **i18next**.
+
+---
 
 # 🛠 Tecnologias Utilizadas
 
@@ -50,8 +85,54 @@ O objetivo do sistema é demonstrar, de forma prática e organizada, a aplicaç�
 
 ---
 
-## 📸 Protótipos do Portfólio
-Veja também o protótipo no [Figman](https://www.figma.com/design/COAKgSRbRgsxiYsUZUZx69/Wireframe-Portif%C3%B3lio---m%C3%A9dia-fid-?node-id=0-1&t=RorW6WAPHX1OuVqd-1)
+# 🏗 Arquitetura
+
+O projeto foi desenvolvida utilizando uma **arquitetura cliente-servidor**, separando responsabilidades entre **Front-end (interface)** e **Back-end (API)**.  
+
+Essa abordagem permite maior **organização do código, manutenção facilitada e possibilidade de evolução do sistema**, pois cada camada pode evoluir de forma independente.
+
+---
+
+# 📂 Estrutura de Pastas
+
+A seguir está a organização principal das pastas e arquivos do projeto, com uma breve descrição de sua finalidade.
+
+.
+├── PORTIFOLIO             
+│
+|   ├── my-portifolio                         # 📁 Diretório principal da aplicação
+|   │   ├── /frontend                         # 💻 Aplicação Front-end desenvolvida com React + Vite
+|   │   │   ├── /docs                         # 📂 Pasta contendo vídeo de demonstração da aplicação
+|   │   │   ├── /src                          # 📂 Código-fonte principal da aplicação React
+|   │   │   │   ├── /assets                   # 🖼️ Recursos estáticos como imagens e ícones.
+|   │   │   │   ├── /components               # 🧱 Componentes reutilizáveis da interface.
+|   │   │   │   |── /data                     # 📊 Arquivos de dados utilizados pelo sistema.
+|   │   │   │   ├── /layout                   # 🏗️ Estrutura base das páginas da aplicação.
+|   │   │   │   ├── /locales                  # 🌎 Arquivos de tradução da aplicação.
+|   │   │   │   ├── /pages                    # 📄 Páginas principais do portfólio.
+|   │   │   │   ├── app.jsx                   # 🧩 Componente raiz que organiza as páginas da aplicação.
+|   │   │   │   ├── i18n.js                   # 🌎 Configuração da internacionalização (i18next).
+|   │   │   │   ├── main.jsx                  # 🚀 Ponto de entrada da aplicação React.
+|   │   │   └── .env                          # 🔐 Variáveis de ambiente do projeto.
+|   │   │   ├── .gitignore                    # 🧹 Arquivos ignorados pelo Git no frontend.
+|   │   │   ├── eslint.config.js              # ✨ Configuração do ESLint para padronização de código.
+|   │   │   ├── index.css                     # 🎨 Estilos globais da aplicação.
+|   │   │   ├── index.html                    # 🌐 Arquivo HTML principal carregado pela aplicação.
+|   │   │   ├── package-lock.json             # 🔒 Lockfile das dependências instaladas.
+|   │   │   ├── package.json                  # 📦 Dependências e scripts do projeto.
+|   │   │   ├── README.md                     # 📘 Documentação específica do frontend.
+|   │   │   ├── vite.config.js                # ⚡ Configuração da ferramenta de build Vite.
+|   │   └── package-lock.json                 # 🔒 Lockfile das dependências do projeto.
+|   ├── .gitignore                            # 🧹 Arquivos ignorados pelo Git.
+|   ├── package-lock.json                     # 🔒 Controle de versões das dependências.
+|   ├── README.md                             # 📘 Documentação principal do projeto.
+|    
+├──
+
+---
+
+# 📸 Protótipos do Portfólio
+Veja também o protótipo no [Figma](https://www.figma.com/design/COAKgSRbRgsxiYsUZUZx69/Wireframe-Portif%C3%B3lio---m%C3%A9dia-fid-?node-id=0-1&t=RorW6WAPHX1OuVqd-1)
 Tela/Sessão | Protótipo
 ------------|-------
 HOME | <img width="360" height="400" alt="HOME PAGE" src="https://github.com/user-attachments/assets/a0150670-9575-4f79-a1ee-2338d641877e" />
@@ -59,6 +140,15 @@ SOBRE | <img width="360" height="3438" alt="Group 4" src="https://github.com/use
 PROJETOS | <img width="360" height="400" alt="PROJETOS" src="https://github.com/user-attachments/assets/55489add-a41c-4339-b7f4-07ecc2d03cdf" />
 HABILIDADES | <img width="360" height="2237" alt="HABILIDADES" src="https://github.com/user-attachments/assets/2fc996b6-f319-4a52-855b-58f33774234d" />
 CONTATO | <img width="360" height="600" alt="CONTATO" src="https://github.com/user-attachments/assets/5bd17fc9-0d4e-4563-93e2-9af81b26ecd5" />
+
+## 🎥 Demonstração da Aplicação
+
+Clique no vídeo abaixo para assistir à demonstração do sistema.
+
+[▶️ Assistir Demonstração](my-portifolio/frontend/docs/portifolioGif.mp4)
+
+---
+
 
 
 
