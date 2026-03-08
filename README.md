@@ -97,6 +97,7 @@ Essa abordagem permite maior **organização do código, manutenção facilitada
 
 A seguir está a organização principal das pastas e arquivos do projeto, com uma breve descrição de sua finalidade.
 
+```
 .
 ├── PORTIFOLIO             
 │
@@ -129,6 +130,7 @@ A seguir está a organização principal das pastas e arquivos do projeto, com u
 |    
 ├──
 
+```
 ---
 
 # 📸 Protótipos do Portfólio
@@ -143,11 +145,22 @@ CONTATO | <img width="360" height="600" alt="CONTATO" src="https://github.com/us
 
 ## 🎥 Demonstração da Aplicação
 
-Clique no vídeo abaixo para assistir à demonstração do sistema.
+Vídeo demonstrando a navegação pelo portfólio e suas principais funcionalidades.
 
-[▶️ Assistir Demonstração](my-portifolio/frontend/docs/portifolioGif.mp4)
+https://github.com/user-attachments/assets/41464261-8f0c-490d-9499-6ec091138621
 
 ---
+
+# 👥 Autores
+
+Este projeto foi desenvolvido pelos seguintes integrantes:
+
+| 👤 Nome | 🖼️ Foto | 💻 GitHub |
+|-------|-------|-------|-------|-------|
+| **Caio Lima** | <div align="center"><img src="https://github.com/caiolima777.png" width="80px"></div> | <div align="center"><a href="https://github.com/caiolima777"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40px"></a></div> 
+| **Ian Nycolas** | <div align="center"><img src="https://github.com/IanNycolaspuc.png" width="80px"></div> | <div align="center"><a href="https://github.com/IanNycolaspuc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40px"></a></div> 
+| **Erick Guedes** | <div align="center"><img src="https://github.com/Erickguedesc.png" width="80px"></div> | <div align="center"><a href="https://github.com/Erickguedesc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40px"></a></div> 
+| **Luiz Fagundes** | <div align="center"><img src="https://github.com/LuizFagundesT.png" width="80px"></div> | <div align="center"><a href="https://github.com/LuizFagundesT"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40px"></a></div> 
 
 
 
