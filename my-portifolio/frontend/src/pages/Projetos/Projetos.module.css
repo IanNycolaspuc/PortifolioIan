@@ -1,5 +1,5 @@
 .projetos {
-  padding: 80px 40px;
+  padding: 20px;
   text-align: center;
   background: #00000000;
   color: white;
@@ -322,4 +322,21 @@
 
   }
   
+}
+
+.SpotifyPlayerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 10px 0 10px 0; /* espaço acima e abaixo */
+
+    animation: fadeIn 2s ease-out both;
+}
+
+.SpotifyPlayerContainer > div {
+    width:30%;
+    min-width: 320px;
+    
 }

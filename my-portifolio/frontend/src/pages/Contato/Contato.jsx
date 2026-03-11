@@ -8,6 +8,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import SpotifyPlayer from '../../components/SpotifyPlayer';
+
 
 export default function Contato() {
     const { t } = useTranslation();
@@ -36,7 +38,8 @@ export default function Contato() {
             formaContato: "Github",
             userAtributeContact: userData.githubName,
             link: userData.links.github
-        }
+        },
+        
     ];
 
     return (
@@ -67,6 +70,11 @@ export default function Contato() {
                                 link={contato.link}
                             />
                         ))}
+                        <div className={styleContato.SpotifyPlayerContainer}>
+                                              <SpotifyPlayer
+                                                  linkMusica="https://open.spotify.com/embed/track/2Z8WuEywRWYTKe1NybPQEW?utm_source=generator&theme=0"
+                                              />
+                                          </div>
                     </div>
                 </div>
             </div>

@@ -7,30 +7,72 @@
     "contact": "Contact"
   },
 
-  "skills": {
-  "title": "Skills",
-  "text": "See a little more about my skills and technologies"
+  "contato": {
+    "contato-title": "Contact",
+    "contato-text": "Liked what you saw? Reach out to me through one of these channels!"
   },
+
+  "email": {
+    "enviaEmail": "Send a message!"
+  },
+
+  "skills": {
+    "title": "Skills",
+    "text": "Take a look at some of my skills and technologies"
+  },
+
   "about": {
     "mainTitle": "About Me",
-    "whoTitle": "Who I Am",
-    "description": "I am a Software Engineering student focused on backend and frontend development. I have experience with Java, Spring Boot, React, and relational databases. I am constantly seeking to grow as a developer and build scalable and innovative solutions.",
-    "expTitle": "Experience",
-    "expSubtitle": "Take a look at my professional journey",
+    "description": "I am a Full Stack Developer focused on Python, building end-to-end solutions and integrating frontends with high-quality APIs. I work with strong attention to security and quality across all stages of the software development lifecycle, from design and testing to delivery, maintenance, and continuous improvement. My goal is to analyze processes, redesign them when necessary, and propose improvements through digital integrations that generate value and results.",
 
-    "job1": {
-      "title": "Frontend Developer",
-      "company": "Company Name",
-      "period": "Jan 2023 - Present",
-      "description": "Development of web applications using React and Spring Boot, database modeling, and REST API integration."
-    },
+    "expTitle": "Professional Experience",
+    "acadTitle": "Academic Experience",
 
-    "job2": {
-      "title": "Junior Developer",
-      "company": "Another Company",
-      "period": "Jun 2022 - Dec 2022",
-      "description": "Worked on system development and maintenance, bug fixing, and performance improvements."
-    },
+    "experienciaProfissional": [
+      {
+        "id": 1,
+        "empresa": "SILLION",
+        "vaga": "Production Assistant - Senior III",
+        "data_inicio": "May/2024",
+        "data_fim": null,
+        "e_atual": true,
+        "descricao": "I currently lead the production team, being responsible for managing and prioritizing demands based on the needs of our Installation Centers. In addition to coordination activities, I also contribute technically by developing and configuring solutions for fatigue monitoring cameras integrated with artificial intelligence, aimed at improving operational safety. I also develop Python automations to optimize internal processes and recurring daily tasks, increasing efficiency and reducing manual work.",
+        "icon_empresa": ""
+      }
+    ],
+
+    "experienciaAcademica": [
+      {
+        "id": 1,
+        "instituicao": "PUC Minas - Coração Eucarístico",
+        "curso": "Bachelor's Degree in Software Engineering",
+        "tipo": "Extension",
+        "titulo": "Lecture: Programming Immersion at Leopoldo de Miranda State School",
+        "data_inicio": "November/2023",
+        "data_fim": "November/2023",
+        "e_atual": false,
+        "descricao": "I was responsible for planning and delivering an immersive lecture about the fundamentals of programming to high school students, using practical and inspiring examples. The goal was to spark interest in the technology field.",
+        "habilidades": ["Education", "Communication", "Logic", "Python", "C++", "Replit"],
+        "icon": "",
+        "link_url": "https://www.linkedin.com/posts/luiz-gustavo-fagundes-teixeira-545225287_no-dia-17-de-novembro-foi-realizado-o-trabalho-activity-7137784781894729728-98bN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWfTsUB8ffrenJyLPvJhnTW_53ASnXaAJw",
+        "link_texto": "Check it out on LinkedIn!"
+      },
+      {
+        "id": 2,
+        "instituicao": "IFSP - São Paulo Campus",
+        "curso": "Technical High School in Mechatronics",
+        "tipo": "Technical Project",
+        "titulo": "Autonomous Line-Following Robot Development",
+        "data_inicio": "Aug/2021",
+        "data_fim": "Dec/2022",
+        "e_atual": false,
+        "descricao": "I designed, built, and programmed an autonomous robot capable of moving using HC-SR04 sound sensors. The project involved integrating sensors, a microcontroller (Arduino), DC motors, and developing control algorithms using PID in C++.",
+        "habilidades": ["Robotics", "Arduino", "Electronics", "PID"],
+        "icon": "",
+        "link_url": "https://youtu.be/pNt1MKCZjFc?si=gAqO6R7Mp2QFQ2DP",
+        "link_texto": "Watch the project video!"
+      }
+    ],
 
     "indicatorsTitle": "Indicators",
     "statsTitle": "Statistics",
@@ -47,7 +89,7 @@
 
     "academic": {
       "software": "Software Engineering - PUC Minas",
-      "js": "JavaScript & TypeScript - Udemy",
+      "js": "JavaScript and TypeScript - Udemy",
       "python": "Python Immersion - Hashtag"
     }
   }

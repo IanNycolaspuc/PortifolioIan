@@ -70,3 +70,20 @@
   font-weight: 600;
   font-size: 1rem;
 }
+
+.SpotifyPlayerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 40px 0 60px 0; /* espaço acima e abaixo */
+
+    animation: fadeIn 2s ease-out both;
+}
+
+.SpotifyPlayerContainer > div {
+    width: 45%;
+    min-width: 320px;
+}
+

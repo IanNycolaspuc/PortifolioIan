@@ -1,3 +1,4 @@
+
 {
   "navbar": {
     "home": "Home",
@@ -9,7 +10,7 @@
 
   "contato":{
     "contato-title" : "Contato",
-    "contato-text" : "Gostou do que viu, me chame por um destes canais logotipo!"
+    "contato-text" : "Gostou do que viu, me chame por um destes canais!"
   },
 
  "email": {
@@ -23,24 +24,64 @@
 
   "about": {
     "mainTitle": "Sobre Mim",
-    "whoTitle": "Quem Sou Eu",
-    "description": "Sou estudante de Engenharia de Software com foco em desenvolvimento backend e frontend. Tenho experiência com Java, Spring Boot, React e bancos de dados relacionais. Busco evoluir constantemente como desenvolvedor e construir soluções escaláveis e inovadoras.",
-    "expTitle": "Experiência",
-    "expSubtitle": "Veja um pouco sobre minha carreira profissional",
+    "description": "Sou Desenvolvedor Full Stack com foco em Python, criando soluções de ponta a ponta e integrando frontends com APIs de qualidade. Trabalho com atenção à segurança e à qualidade em todas as etapas do desenvolvimento de software: desde o projeto, testes e entrega até a manutenção e o aprimoramento contínuo.Meu objetivo é estudar processos, redesenhá-los quando necessário e propor melhorias por meio de integrações digitais que gerem valor e resultados.",
+    "expTitle": "Experiência Profissional",
+    "acadTitle": "Experiência Acadêmica",
+    
 
-    "job1": {
-      "title": "Desenvolvedor Frontend",
-      "company": "Nome da Empresa",
-      "period": "Jan 2023 - Presente",
-      "description": "Desenvolvimento de aplicações web utilizando React e Spring Boot, participação em modelagem de banco de dados e integração com APIs REST."
-    },
+   
+    "experienciaProfissional": [
+      {
+        "id": 1,
+        "empresa": "SILLION",
+        "vaga": "Assistente De Produção - Pleno III",
+        "data_inicio": "Maio/2024",
+        "data_fim": null,
+        "e_atual": true,
+        "descricao": "Atuo na liderança da equipe de produção, sendo responsável pela gestão e priorização de demandas com base nas necessidades dos Centros de Instalação. Além das atividades de coordenação, contribuo tecnicamente com o desenvolvimento e configuração de soluções para câmeras de monitoramento de fadiga integradas com inteligência artificial, voltadas à segurança operacional. Também desenvolvo automações em Python para otimizar processos internos e tarefas recorrentes, aumentando a eficiência e reduzindo atividades manuais no dia a dia.",
+        "icon_empresa": ""
+      }
+    ],
+   
 
-    "job2": {
-      "title": "Desenvolvedor Júnior",
-      "company": "Outra Empresa",
-      "period": "Jun 2022 - Dez 2022",
-      "description": "Atuação no desenvolvimento e manutenção de sistemas, correção de bugs e melhoria de performance."
-    },
+
+
+
+
+
+
+    "experienciaAcademica": [
+      {
+        "id": 1,
+        "instituicao": "Puc Minas - Coração Eucarístico",
+        "curso": "Bacharelado em Engenharia de Software",
+        "tipo": "Extensão",
+        "titulo": "Palestra: Imersão à Programação na Escola Estadual Leopoldo de Miranda",
+        "data_inicio": "Novembro/2023",
+        "data_fim": "NovembroMar/2023",
+        "e_atual": false,
+        "descricao": "Fui responsável por planejar e ministrar uma palestra imersiva sobre os fundamentos da programação para alunos do ensino médio, utilizando exemplos práticos e inspiradores. O objetivo foi despertar o interesse pela área de tecnologia.",
+        "habilidades": ["Educação", "Comunicação", "Lógica", "Python","C++", "Replit"],
+        "icon": "",
+        "link_url": "https://www.linkedin.com/posts/luiz-gustavo-fagundes-teixeira-545225287_no-dia-17-de-novembro-foi-realizado-o-trabalho-activity-7137784781894729728-98bN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWfTsUB8ffrenJyLPvJhnTW_53ASnXaAJw", 
+        "link_texto": "Confira no Linkedin !"
+      },
+      {
+        "id": 2,
+        "instituicao": "IFSP - Campus São Paulo",
+        "curso": "Ensino Médio Técnico em Mecatrônica",
+        "tipo": "Projeto Técnico",
+        "titulo": "Desenvolvimento de Robô Autônomo Seguidor de Linha (Carrinho)",
+        "data_inicio": "Ago/2021",
+        "data_fim": "Dez/2022",
+        "e_atual": false,
+        "descricao": "Projetei, construí e programei um robô autônomo que se movia através de sensores de som HC-SR04. O projeto envolvu a integração de sensores, microcontrolador (Arduino), motores CC e desenvolvimento de algoritmos de controle PID em C++. \n LINK: ",
+        "habilidades": ["Robótica", "Arduino", "Eletrônica", "PID"],
+        "icon": "",
+        "link_url": "https://youtu.be/pNt1MKCZjFc?si=gAqO6R7Mp2QFQ2DP", 
+        "link_texto": "Confira o vídeo do projeto!"
+      }
+    ],
 
     "indicatorsTitle": "Indicadores",
     "statsTitle": "Estatísticas",

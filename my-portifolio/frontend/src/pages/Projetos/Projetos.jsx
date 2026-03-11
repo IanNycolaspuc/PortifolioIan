@@ -3,22 +3,26 @@ import styles from "./Projetos.module.css";
 import { userData } from "../../data/userData.js";
 import BackgroundCanvas from "../../components/BackgroundCanvas";
 
-// ✏️ IMAGENS DOS CARDS — adicione suas imagens em src/assets/ e importe aqui
-import portfolioImg from "../../assets/eradogelo.gif";
-import Timerimg from "../../assets/teste.gif";
-//import bisnaguinha from "../..assets/NomedoGif ou nome da img";
 
-// ✏️ MAPA DE IMAGENS — relacione o nome exato do repo com a imagem importada
+import SpotifyPlayer from '../../components/SpotifyPlayer';
+
+import portfolioImg from "../../assets/gitPortifolio.gif";
+import readmeGit from "../../assets/readmeGit.gif";
+import emailEstoque from  "../../assets/emailEstoque.gif";
+
+
 const repoImages = {
   "Portifolio": portfolioImg,
-  "timer---js" : Timerimg,
+  "LuizFagundesT" : readmeGit,
+  "alerta-deposito-incorreto": emailEstoque
   //"NomedoRepositorio" bisnaguinha,
 };
 
 // ✏️ REPOS EM DESTAQUE no carrossel — PARA DESTACAR PROJETOS NO CARROSEL - 
 const featuredRepos = [
   "Portifolio",
-  "timer---js",
+  "LuizFagundesT",
+  "alerta-deposito-incorreto"
 ];
 
 export default function Projetos() {
@@ -69,9 +73,14 @@ export default function Projetos() {
   return (
     <section className={styles.projetos}>
       <BackgroundCanvas />
+      
       <h1 className={styles.h1}>Meus projetos</h1>
       <p>Veja aqui um pouco dos meus projetos!</p>
-
+      <div className={styles.SpotifyPlayerContainer}>
+         <SpotifyPlayer
+            linkMusica="https://open.spotify.com/embed/track/2wtnWkmyE2ivwmDyVfJ8N5?utm_source=generator&theme=0"
+          />
+      </div>
       {/* ── CARROSSEL ── */}
       {featured.length > 0 && (
         <div className={styles.carrosselWrapper}>
