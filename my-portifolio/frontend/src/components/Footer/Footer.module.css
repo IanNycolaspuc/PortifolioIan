@@ -48,7 +48,7 @@
 
 .tag {
   background-color: #2a2a2a;
-  color: #1ed760; /* Verde Spotify */
+  color: #d71e1e; /* Verde Spotify */
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 12px;
@@ -97,7 +97,7 @@
 }
 
 .socialLink:hover .icon {
-  color: #1ed760; /* Ícone fica verde no hover */
+  color: #d71e1e; /* Ícone fica verde no hover */
 }
 
 .linkText {

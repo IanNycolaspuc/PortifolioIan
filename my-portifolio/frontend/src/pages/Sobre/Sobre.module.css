@@ -11,7 +11,6 @@
   background-color: #0a0a0a00;
   color: #f5f5f5;
   overflow: hidden;
- 
 }
 
 .container {
@@ -29,75 +28,107 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px; 
+    gap: 60px;
     width: 100%;
-    animation: fadeInDown 1.5s ease-out; 
+    animation: fadeInDown 1.5s ease-out;
 }
 
 .photoSection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px; 
+  gap: 30px;
   width: 100%;
 }
-
 
 .photoWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 220px; 
+  width: 220px;
   height: 220px;
   margin-bottom: 10px;
 }
-
 
 .photoWrapper::before {
     content: '';
     position: absolute;
     top: -20px; left: -20px; right: -20px; bottom: -20px;
     border-radius: 50%;
-    
-    /* Gradiente cônico para simular as linhas do disco */
+
     background: conic-gradient(
         from 0deg,
-        rgba(30, 215, 96, 0.9),  /* Verde Neon */
-        rgb(255, 255, 255),  /* Transparente */
-        rgba(30, 215, 96, 0.9),  /* Verde Neon */
-        rgba(30, 215, 96, 0.1),  /* Transparente */
-        rgba(30, 215, 96, 0.9)   /* Verde Neon */
+        rgba(220, 0, 0, 0.9),
+        transparent 8deg,
+        rgba(220, 0, 0, 0.9) 16deg,
+        transparent 24deg,
+        rgba(220, 0, 0, 0.9) 32deg,
+        transparent 40deg,
+        rgba(220, 0, 0, 0.9) 48deg,
+        transparent 56deg,
+        rgba(220, 0, 0, 0.9) 64deg,
+        transparent 72deg,
+        rgba(220, 0, 0, 0.9) 80deg,
+        transparent 88deg,
+        rgba(220, 0, 0, 0.9) 96deg,
+        transparent 104deg,
+        rgba(220, 0, 0, 0.9) 112deg,
+        transparent 120deg,
+        rgba(220, 0, 0, 0.9) 128deg,
+        transparent 136deg,
+        rgba(220, 0, 0, 0.9) 144deg,
+        transparent 152deg,
+        rgba(220, 0, 0, 0.9) 160deg,
+        transparent 168deg,
+        rgba(220, 0, 0, 0.9) 176deg,
+        transparent 184deg,
+        rgba(220, 0, 0, 0.9) 192deg,
+        transparent 200deg,
+        rgba(220, 0, 0, 0.9) 208deg,
+        transparent 216deg,
+        rgba(220, 0, 0, 0.9) 224deg,
+        transparent 232deg,
+        rgba(220, 0, 0, 0.9) 240deg,
+        transparent 248deg,
+        rgba(220, 0, 0, 0.9) 256deg,
+        transparent 264deg,
+        rgba(220, 0, 0, 0.9) 272deg,
+        transparent 280deg,
+        rgba(220, 0, 0, 0.9) 288deg,
+        transparent 296deg,
+        rgba(220, 0, 0, 0.9) 304deg,
+        transparent 312deg,
+        rgba(220, 0, 0, 0.9) 320deg,
+        transparent 328deg,
+        rgba(220, 0, 0, 0.9) 336deg,
+        transparent 344deg,
+        rgba(220, 0, 0, 0.9) 352deg,
+        transparent 360deg
     );
-    
-    
-    box-shadow: 0 0 30px rgba(30, 215, 96, 0.7);
-    
-    
-    animation: discRotate 8s linear infinite;
-    z-index: -1; 
-    opacity: 0.8;
-    
-   
-    filter: blur(1.5px);
+
+    box-shadow: 0 0 30px rgba(220, 0, 0, 0.7);
+    animation: discRotate 4s linear infinite;
+    z-index: -1;
+    opacity: 0.9;
+    filter: blur(0.5px);
 }
 
-/* Borda interna opaca para simular a borda do disco - Pseudo-elemento ::after */
 .photoWrapper::after {
     content: '';
     position: absolute;
     top: -15px; left: -15px; right: -15px; bottom: -15px;
     border-radius: 50%;
-    background: rgba(10, 10, 10, 1); /* Fundo preto base */
-    z-index: -1; /* Fica entre a animação e a foto */
-    border: 2px solid rgba(30, 215, 96, 0.3);
+    background: rgba(10, 10, 10, 1);
+    z-index: -1;
+    border: 2px solid rgba(220, 0, 0, 0.3);
 }
 
 .photoCircle {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #1ed760 0%, #1aa34a 100%);
+  background: linear-gradient(135deg, #d71e1e 0%, #a31a1a 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,13 +138,13 @@
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 4px solid rgba(10, 10, 10, 1); /* Borda preta grossa para destacar o disco */
-  z-index: 1; /* Foto no topo */
+  border: 4px solid rgba(10, 10, 10, 1);
+  z-index: 1;
 }
 
 .photoCircle:hover {
   transform: scale(1.03);
-  box-shadow: 0 30px 80px rgba(30, 215, 96, 0.6);
+  box-shadow: 0 30px 80px rgba(215, 36, 30, 0.6);
 }
 
 .photoCircle img {
@@ -123,6 +154,7 @@
   border-radius: 50%;
   filter: brightness(1.1) contrast(1.05);
   transition: filter 0.3s ease;
+  transform: scaleX(1); /* foto na direção correta */
 }
 
 .mainTitle {
@@ -142,29 +174,20 @@
   color: #e0e0e0;
   font-size: 1.2rem;
   margin-top: -10px;
-  /* Removida altura mínima, pois o texto é estático */
 }
 
-/* ========================
-   PLAYER DO SPOTIFY - CENTRALIZADO
-   ======================== */
 .SpotifyPlayerContainer {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;    /* Centraliza verticalmente (se necessário) */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-width: 600px; /* Largura máxima sutil */
-    animation: fadeIn 2s ease-out both; /* Aparece com delay após a descrição */
+    max-width: 600px;
+    animation: fadeIn 2s ease-out both;
 }
 
-/* Se o seu SpotifyPlayer tem estilos internos, garanta que ele ocupe a largura total */
 .SpotifyPlayerContainer > div {
     width: 100%;
 }
-
-/* ========================
-   SEÇÕES GERAIS (Mantido)
-   ======================== */
 
 .section {
   display: flex;
@@ -191,7 +214,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #1ed760, transparent);
+  background: linear-gradient(90deg, transparent, #d71e1e, transparent);
   border-radius: 2px;
 }
 
@@ -200,10 +223,6 @@
   font-size: 1.5rem;
   margin-top: 15px;
 }
-
-/* ========================
-   TIMELINE / EXPERIÊNCIA (Mantido)
-   ======================== */
 
 .timeline {
   display: flex;
@@ -222,7 +241,7 @@
 
 .timelineIcon {
   font-size: 32px;
-  color: #1ed760;
+  color: #d71e1e;
   margin-top: 5px;
   flex-shrink: 0;
   display: flex;
@@ -242,7 +261,7 @@
 }
 
 .card:hover {
-  border-color: rgba(30, 215, 96, 0.5);
+  border-color: rgba(215, 30, 30, 0.5);
   background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.8));
   box-shadow: 0 12px 48px rgba(30, 215, 96, 0.15);
   transform: translateY(-5px);
@@ -260,7 +279,7 @@
   align-items: center;
   gap: 8px;
   font-weight: 500;
-  color: #1ed760;
+  color: #d71e1e;
   margin-bottom: 8px;
   font-size: 0.95rem;
 }
@@ -276,10 +295,6 @@
   line-height: 1.6;
   font-size: 0.95rem;
 }
-
-/* ========================
-   INDICADORES - MELHORADOS (Mantido)
-   ======================== */
 
 .indicatorsSection {
   gap: 50px;
@@ -297,7 +312,7 @@
 }
 
 .statsBox:hover {
-  border-color: rgba(30, 215, 96, 0.5);
+  border-color: rgba(215, 30, 30, 0.5);
   box-shadow: 0 15px 50px rgba(30, 215, 96, 0.15);
 }
 
@@ -306,14 +321,14 @@
   align-items: center;
   gap: 12px;
   margin-bottom: 35px;
-  color: #1ed760;
+  color: #d71e1e;
   font-size: 1.15rem;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
 .statsHeader svg {
-  box-shadow: 0 0 10px rgba(30, 215, 96, 0.4);
+  box-shadow: 0 0 10px rgba(215, 30, 30, 0.4);
 }
 
 .stats {
@@ -327,7 +342,7 @@
   opacity: 0;
   transform: scale(0.8);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, transform; 
+  will-change: opacity, transform;
 }
 
 .statItem.active {
@@ -340,7 +355,7 @@
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 8px;
-  text-shadow: 0 0 15px rgba(30, 215, 96, 0.7);
+  text-shadow: 0 0 15px rgba(215, 30, 30, 0.7);
 }
 
 .statItem span {
@@ -351,13 +366,9 @@
   letter-spacing: 0.3px;
 }
 
-/* ========================
-   SEÇÃO ACADÊMICA - MELHORADA (Mantido)
-   ======================== */
-
 .academicBox {
   background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(30, 30, 30, 0.8));
-  border: 1px solid rgba(30, 215, 96, 0.2);
+  border: 1px solid rgba(215, 30, 30, 0.2);
   padding: 40px;
   border-radius: 16px;
   width: 100%;
@@ -367,7 +378,7 @@
 }
 
 .academicBox:hover {
-  border-color: rgba(30, 215, 96, 0.5);
+  border-color: rgba(215, 30, 30, 0.5);
   box-shadow: 0 15px 50px rgba(30, 215, 96, 0.15);
 }
 
@@ -383,7 +394,7 @@
 }
 
 .academicTitle svg {
-  color: #1ed760;
+  color: #d71e1e;
   box-shadow: 0 0 10px rgba(30, 215, 96, 0.4);
 }
 
@@ -409,10 +420,10 @@
 }
 
 .progressPercent {
-  color: #1ed760;
+  color: #d71e1e;
   font-weight: 700;
   font-size: 1.05rem;
-  text-shadow: 0 0 10px rgba(30, 215, 96, 0.5);
+  text-shadow: 0 0 10px rgba(245, 15, 15, 0.5);
 }
 
 .progressBar {
@@ -426,10 +437,10 @@
 
 .progressBar div {
   height: 100%;
-  background: linear-gradient(90deg, #1ed760, #1aa34a);
+  background: linear-gradient(90deg, #d71e1e, #a31a1a);
   border-radius: 8px;
-  transition: width 1.2s ease-out; 
-  box-shadow: 0 0 15px rgba(30, 215, 96, 0.8), 0 0 5px rgba(30, 215, 96, 1);
+  transition: width 1.2s ease-out;
+  box-shadow: 0 0 15px rgba(215, 58, 30, 0.8), 0 0 5px rgb(215, 30, 30);
   position: relative;
 }
 
@@ -440,11 +451,6 @@
   background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
 }
-
-
-/* ========================
-   ANIMAÇÕES (Mantido)
-   ======================== */
 
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-30px); }
@@ -466,15 +472,10 @@
   to { opacity: 1; transform: translateX(0); }
 }
 
-/* ANIMAÇÃO DE ROTAÇÃO DO DISCO */
 @keyframes discRotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
-/* ========================
-   RESPONSIVIDADE (Mantido)
-   ======================== */
 
 @media (max-width: 768px) {
   .sobrePage { padding: 60px 15px; }
@@ -489,12 +490,7 @@
   .timelineItem { flex-direction: column; gap: 15px; }
   .card { padding: 25px; }
   .statsBox, .academicBox { padding: 30px; }
-  
-  /* Ajuste do disco em tablets */
-  .photoWrapper {
-      width: 190px;
-      height: 190px;
-  }
+  .photoWrapper { width: 190px; height: 190px; }
   .photoWrapper::before { top: -15px; left: -15px; right: -15px; bottom: -15px; }
 }
 
@@ -511,10 +507,5 @@
   .statItem span { font-size: 0.85rem; }
   .academicTitle { font-size: 1.2rem; margin-bottom: 25px; }
   .statsBox, .academicBox { padding: 20px; }
-  
-  /* Ajuste do disco em celulares */
-  .photoWrapper {
-      width: 170px;
-      height: 170px;
-  }
+  .photoWrapper { width: 170px; height: 170px; }
 }

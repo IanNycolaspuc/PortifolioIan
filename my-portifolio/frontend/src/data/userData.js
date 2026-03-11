@@ -2,20 +2,20 @@
 import curriculo from "../assets/curriculo.pdf";
 
 export const userData = {
-  name: "Luiz Gustavo F. Teixeira",
+  name: "Ian Nycolas F. Costa",
   img: "",
   desc: "user.desc",
-  emailName: "luizagustinho032@gmail.com",
-  linkedinName: "luiz-gustavo-fagundes-teixeira",
-  githubName: "LuizFagundesT",
+  emailName: "ian.nycolas@gmail.com",
+  linkedinName: "ian-costa",
+  githubName: "Ian Nycolaspuc",
 
   links: {
-    github: "https://github.com/LuizFagundesT",
-    linkedin: "https://www.linkedin.com/in/luiz-gustavo-fagundes-teixeira-545225287/",
-    email: "luizagustinho032@gmail.com"
+    github: "https://github.com/IanNycolaspuc",
+    linkedin: "https://www.linkedin.com/in/ian-costa-8702b019b/",
+    email: "ian.nycolas@gmail.com"
   },
 
-  telefone: "+5531984619823",
+  telefone: "+5531993655506",
   curriculo,
 
   caracteristicas: [
@@ -26,7 +26,7 @@ export const userData = {
     "user.Figman"
   ],
 
-  footerDev: "Sou Desenvolvedor Full Stack com foco em Python, criando soluções de ponta a ponta e integrando frontends com APIs de qualidade. Trabalho com atenção à segurança e à qualidade em todas as etapas do desenvolvimento de software: desde o projeto, testes e entrega até a manutenção e o aprimoramento contínuo.Meu objetivo é estudar processos, redesenhá-los quando necessário e propor melhorias por meio de integrações digitais que gerem valor e resultados."
+  footerDev: "Graduando em Engenharia de Software pela PUC Minas, com formação técnica em Eletrônica pelo CEFET-MG e experiência em desenvolvimento de hardware, firmware e implantação de soluções tecnológicas. Atuo na integração entre hardware e software em sistemas de automação e logística, com foco em resolução de problemas, melhoria de processos e desenvolvimento de soluções eficientes para clientes."
 
   
 };

@@ -15,8 +15,8 @@ export default function Header() {
     <nav className={stylesHeader.header}>
       
       <div className={stylesHeader.logoDev}>
-        <img src={logoLg} alt="logo LG" width={28} />
-        <h5>LUIZ GUSTAVO F. TEIXEIRA</h5>
+        <img src={logoLg} alt="logo IC" width={28} />
+        <h5>IAN NYCOLAS F. COSTA</h5>
       </div>
 
       {/* BOTÃO HAMBURGUER */}

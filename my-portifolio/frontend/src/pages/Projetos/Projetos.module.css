@@ -34,7 +34,7 @@
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 255, 170, 0.2);
+  box-shadow: 0 15px 40px rgba(255, 0, 0, 0.2);
 }
 
 .image img {
@@ -70,7 +70,7 @@
 }
 
 .language {
-  background: #1db954;
+  background: #b91d1d;
   color: #000;
   padding: 5px 12px;
   border-radius: 20px;
@@ -86,7 +86,7 @@
 .button {
   margin-top: auto;
   padding: 10px 16px;
-  background: #1db954;
+  background: #b91d1d;
   color: black;
   border-radius: 8px;
   font-weight: bold;
@@ -126,11 +126,11 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #1db954;
-  border: 1px solid #1db954;
+  color: #b91d1d;
+  border: 1px solid #b91d1d;
   padding: 6px 18px;
   border-radius: 30px;
-  box-shadow: 0 0 12px rgba(29, 185, 84, 0.3);
+  box-shadow: 0 0 12px rgba(185, 29, 29, 0.3);
 }
 
 .carrossel {
@@ -147,10 +147,10 @@
   display: flex;
   flex-direction: row;
   background: linear-gradient(135deg, #0d0d0d, #161616);
-  border: 1px solid rgba(29, 185, 84, 0.2);
+  border: 1px solid rgba(185, 29, 29, 0.2);
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(29, 185, 84, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(185, 29, 29, 0.08);
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
@@ -217,7 +217,7 @@
   display: inline-block;
   margin-top: 6px;
   padding: 11px 22px;
-  background: #1db954;
+  background: #b91d1d;
   color: #000;
   border-radius: 10px;
   font-weight: 700;
@@ -239,8 +239,8 @@
   transform: translateY(-50%);
   z-index: 10;
   background: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(29, 185, 84, 0.3);
-  color: #1db954;
+  border: 1px solid rgba(185, 29, 29, 0.3);
+  color: #b91d1d;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -256,7 +256,7 @@
 
 .arrow:hover {
   background: rgba(29, 185, 84, 0.15);
-  border-color: #1db954;
+  border-color: #b91d1d;
   transform: translateY(-50%);
 }
 
@@ -288,11 +288,11 @@
 }
 
 .dot:hover {
-  background: rgba(29, 185, 84, 0.5);
+  background: rgba(185, 29, 29, 0.5);
 }
 
 .dotActive {
-  background: #1db954;
+  background: #b91d1d;
   transform: scale(1.3);
 }
 

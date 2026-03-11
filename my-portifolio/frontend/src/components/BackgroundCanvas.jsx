@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import motoSrc from '../assets/moto.png';
 
 export default function BackgroundCanvas() {
   const canvasRef = useRef(null);
@@ -15,95 +16,90 @@ export default function BackgroundCanvas() {
     }
 
     resizeCanvas();
-
-    //  Mouse com área pequena
-    const mouse = {
-      x: null,
-      y: null,
-      radius: 250,
-    };
-
-    const handleMouseMove = (event) => {
-      mouse.x = event.clientX;
-      mouse.y = event.clientY;
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("resize", resizeCanvas);
 
-    //  Criando partículas
+    const mouse = { x: null, y: null, radius: 150 };
+    const handleMouseMove = (e) => { mouse.x = e.clientX; mouse.y = e.clientY; };
+    window.addEventListener("mousemove", handleMouseMove);
+
+    const motoImg = new Image();
+    motoImg.src = motoSrc;
+
     const particles = [];
-    const numberOfParticles = 250
-    ;
+    const numberOfParticles = 25;
 
-    for (let i = 0; i < numberOfParticles; i++) {
-      particles.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        size: Math.random() * 2 + 1,
-        speedX: Math.random() * 1.2 + 0.5,
-        speedY: (Math.random() - 0.5) * 0.4,
-      });
-    }
+    motoImg.onload = () => {
 
-    function drawParticle(p) {
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fillStyle = "#1DB954";
-      ctx.shadowColor = "#1ed760";
-      ctx.shadowBlur = 12;
-      ctx.fill();
-    }
+      const imgW = 220;
+      const imgH = (motoImg.height / motoImg.width) * imgW;
 
-    function updateParticle(p) {
-      //  Movimento contínuo
-      p.x += p.speedX;
-      p.y += p.speedY;
-
-      // Loop lateral
-      if (p.x > canvas.width) {
-        p.x = 0;
-        p.y = Math.random() * canvas.height;
+      for (let i = 0; i < numberOfParticles; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * (canvas.height * 0.75) + canvas.height * 0.1,
+          scale: Math.random() * 0.4 + 0.5,
+          speedX: Math.random() * 1.5 + 1.0,
+          bobOffset: Math.random() * Math.PI * 2,
+          bobSpeed: Math.random() * 0.015 + 0.008,
+          bobAmount: Math.random() * 3 + 2,
+          alphaOffset: Math.random() * Math.PI * 2,
+          alphaSpeed: Math.random() * 0.01 + 0.005,
+          imgW,
+          imgH,
+        });
       }
 
-      if (p.y > canvas.height) {
-        p.y = 0;
+      function drawMoto(p) {
+        const w = p.imgW * p.scale;
+        const h = p.imgH * p.scale;
+        const alpha = 0.55 + Math.sin(p.alphaOffset) * 0.15;
+
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        ctx.translate(p.x, p.y);
+        ctx.shadowColor = "rgba(220, 0, 0, 0.25)";
+        ctx.shadowBlur = 18;
+        ctx.drawImage(motoImg, -w / 2, -h / 2, w, h);
+        ctx.restore();
       }
 
-      if (p.y < 0) {
-        p.y = canvas.height;
-      }
+      function updateParticle(p) {
+        p.x += p.speedX;
 
-      //  Interação suave com mouse
-      if (mouse.x !== null && mouse.y !== null) {
-        let dx = mouse.x - p.x;
-        let dy = mouse.y - p.y;
-        let distance = Math.sqrt(dx * dx + dy * dy);
+        // Balanço senoidal salvo direto no p.y
+        p.y += Math.sin(p.bobOffset) * 0.4;
+        p.bobOffset   += p.bobSpeed;
+        p.alphaOffset += p.alphaSpeed;
 
-        if (distance < mouse.radius) {
-          const force = (mouse.radius - distance) / mouse.radius;
-          const directionX = dx / distance;
-          const directionY = dy / distance;
-
-          p.x -= directionX * force * 2;
-          p.y -= directionY * force * 2;
+        if (p.x > canvas.width + 150) {
+          p.x = -150;
+          p.y = Math.random() * (canvas.height * 0.75) + canvas.height * 0.1;
         }
+
+        // Desvio do mouse
+        if (mouse.x !== null && mouse.y !== null) {
+          const dx = mouse.x - p.x;
+          const dy = mouse.y - p.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < mouse.radius) {
+            const force = (mouse.radius - dist) / mouse.radius;
+            p.x -= (dx / dist) * force * 4;
+            p.y -= (dy / dist) * force * 4;
+          }
+        }
+
+        drawMoto(p);
       }
 
-      drawParticle(p);
-    }
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach((p) => updateParticle(p));
+        animationId = requestAnimationFrame(animate);
+      }
 
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      animate();
+    };
 
-      particles.forEach((p) => updateParticle(p));
-
-      animationId = requestAnimationFrame(animate);
-    }
-
-    animate();
-
-    // 🧹 Cleanup importante no React
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("mousemove", handleMouseMove);

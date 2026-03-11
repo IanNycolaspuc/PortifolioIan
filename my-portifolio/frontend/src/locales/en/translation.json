@@ -23,7 +23,7 @@
 
   "about": {
     "mainTitle": "About Me",
-    "description": "I am a Full Stack Developer focused on Python, building end-to-end solutions and integrating frontends with high-quality APIs. I work with strong attention to security and quality across all stages of the software development lifecycle, from design and testing to delivery, maintenance, and continuous improvement. My goal is to analyze processes, redesign them when necessary, and propose improvements through digital integrations that generate value and results.",
+    "description": "Software Engineering student at PUC Minas and Electronics Technician from CEFET-MG, with experience in developing and deploying technological solutions that integrate hardware and software. I'm driven by challenges, constant learning, and a passion for motorcycles — where I find inspiration to explore new paths both inside and outside of technology. 🏍️",
 
     "expTitle": "Professional Experience",
     "acadTitle": "Academic Experience",
@@ -31,12 +31,12 @@
     "experienciaProfissional": [
       {
         "id": 1,
-        "empresa": "SILLION",
-        "vaga": "Production Assistant - Senior III",
-        "data_inicio": "May/2024",
+        "empresa": "CEMIG",
+        "vaga": "Integrated Programming Technician",
+        "data_inicio": "October/2025",
         "data_fim": null,
         "e_atual": true,
-        "descricao": "I currently lead the production team, being responsible for managing and prioritizing demands based on the needs of our Installation Centers. In addition to coordination activities, I also contribute technically by developing and configuring solutions for fatigue monitoring cameras integrated with artificial intelligence, aimed at improving operational safety. I also develop Python automations to optimize internal processes and recurring daily tasks, increasing efficiency and reducing manual work.",
+        "descricao": "Responsible for dispatching and supervising low-voltage service orders, ensuring efficient execution of activities. Also manages and monitors medium-voltage service orders, developing strategies for work order execution and acting as a liaison between field electricians and medium-voltage controllers, ensuring operational alignment and safety.",
         "icon_empresa": ""
       }
     ],
@@ -51,7 +51,7 @@
         "data_inicio": "November/2023",
         "data_fim": "November/2023",
         "e_atual": false,
-        "descricao": "I was responsible for planning and delivering an immersive lecture about the fundamentals of programming to high school students, using practical and inspiring examples. The goal was to spark interest in the technology field.",
+        "descricao": "I delivered an immersive lecture about the fundamentals of programming to high school students, using practical and inspiring examples. The goal was to spark interest in the technology field.",
         "habilidades": ["Education", "Communication", "Logic", "Python", "C++", "Replit"],
         "icon": "",
         "link_url": "https://www.linkedin.com/posts/luiz-gustavo-fagundes-teixeira-545225287_no-dia-17-de-novembro-foi-realizado-o-trabalho-activity-7137784781894729728-98bN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWfTsUB8ffrenJyLPvJhnTW_53ASnXaAJw",
@@ -66,7 +66,7 @@
         "data_inicio": "Aug/2021",
         "data_fim": "Dec/2022",
         "e_atual": false,
-        "descricao": "I designed, built, and programmed an autonomous robot capable of moving using HC-SR04 sound sensors. The project involved integrating sensors, a microcontroller (Arduino), DC motors, and developing control algorithms using PID in C++.",
+        "descricao": "I designed, built, and programmed an autonomous robot that moved using HC-SR04 sound sensors. The project involved integrating sensors, a microcontroller (Arduino), DC motors, and developing PID control algorithms in C++.",
         "habilidades": ["Robotics", "Arduino", "Electronics", "PID"],
         "icon": "",
         "link_url": "https://youtu.be/pNt1MKCZjFc?si=gAqO6R7Mp2QFQ2DP",
@@ -82,7 +82,7 @@
       "years": "Years",
       "clients": "Clients",
       "commits": "Commits",
-      "coffee": "Coffees"
+      "coffee": "Km on the bike"
     },
 
     "academicTitle": "Academic Progress",
